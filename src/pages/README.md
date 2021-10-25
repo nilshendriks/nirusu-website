@@ -1,0 +1,27 @@
+# TODO
+
+- ~~img in blogpost md~~
+- ~~code blocks in md~~
+- ~~dark mode : https://dev.to/tqbit/create-your-own-dark-mode-toggle-component-with-vue-js-1284~~
+- ~~pagination on blog list pages~~
+- add support for def lists in md
+- **pagination styles**
+- **prev next nav on blog article?**
+- nav
+  - original menu: projects / posts / about me
+  - new menu: photography / design? / posts / about me
+  - future menu: photography / design or 3d or so / blog / about me / contact / client area / prints or shop
+  - **link styles**
+  - **active item styles**
+- header styles
+- footer styles
+- about
+- home
+  - **logo**
+  - list posts / projects?
+- search: https://gridsome.org/docs/guide-search/#add-a-search-to-gridsome
+- theming: wireframes vs hifi.
+- query sorting?
+- page transitions
+- article blended custom css and js for example?
+- deal with fixed max-with 760 on layout
