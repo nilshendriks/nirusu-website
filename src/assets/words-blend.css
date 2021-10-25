@@ -1,0 +1,120 @@
+.mdl-word-container {
+  --gold: #ac933a;
+  --black: black;
+  --silver: #ccd1d4;
+  --silver2: rgb(158, 158, 158);
+  --january: #036ab4;
+  --youth: #00aae6;
+  --music: #aac932;
+  --cabaret: #f25d95;
+  --opera: #f04023;
+  --dance: #877471;
+  --toneel: #f4981d;
+  --mint: #01b7a6;
+  --yellow: #f1b80e;
+  --magenta: #e430b3;
+  --purple: #411fa8;
+  --skin: #f7a084;
+  --brown: #a2480b;
+  --darkbrown: #897472;
+}
+
+.mdl-word-container {
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+  padding: 4px 20px 4px 20px;
+}
+
+.mdl-word-container.--dark {
+  background: black;
+}
+
+.mdl-word-container .word {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-size: 4vw;
+  margin: 0;
+  padding: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+@media only screen and (min-width: 1251px) {
+  .mdl-word-container .word {
+    font-size: 3vw;
+  }
+}
+
+.mdl-word-container .layer1 {
+  color: var(--silver2);
+  transform: scaleY(-1);
+}
+
+.mdl-word-container .layer2 {
+  color: black;
+  mix-blend-mode: color-burn;
+  position: relative;
+  top: -3px;
+}
+
+.mdl-word-container .layer3 {
+  color: var(--cabaret);
+  mix-blend-mode: multiply;
+  position: relative;
+  top: -3px;
+}
+
+.mdl-word-container .opera.layer3 {
+  color: var(--opera);
+}
+
+.mdl-word-container .youth.layer3 {
+  color: var(--youth);
+}
+
+.mdl-word-container .dance.layer3 {
+  color: var(--dance);
+}
+
+.mdl-word-container .music.layer3 {
+  color: var(--music);
+}
+
+.mdl-word-container .theatre.layer3 {
+  color: var(--toneel);
+}
+
+.mdl-word-container .stads.layer3 {
+  color: var(--gold);
+}
+
+.mdl-word-container.--dark .layer1 {
+  color: var(--gold);
+}
+
+.mdl-word-container.--dark .layer2 {
+  color: var(--silver);
+  mix-blend-mode: screen;
+}
+
+.mdl-word-container.--dark .layer3 {
+  color: white;
+  mix-blend-mode: saturation;
+}
+
+.mdl-word-container.--coloured .layer1 {
+  color: var(--youth);
+}
+
+.mdl-word-container.--coloured .layer2 {
+  color: #411fa8;
+}
+
+.mdl-word-container.--coloured .layer3 {
+  color: #e430b3;
+}

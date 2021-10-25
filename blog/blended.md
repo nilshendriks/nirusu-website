@@ -138,6 +138,6 @@ These days support is a bit better. Both latest versions of Chrome and Firefox s
 ```
 
 
-## Example of brand identity page
-<iframe title="Example of brand identity page" src="http://poc.nirusu.me/utrecht/blend_v004.html" style="width: 99vw; height: 100vh; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;"><iframe>
+<!-- ## Example of brand identity page -->
+<!-- <iframe title="Example of brand identity page" src="http://poc.nirusu.me/utrecht/blend_v004.html" style="width: 99vw; height: 100vh; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;"><iframe> -->
 

@@ -8,6 +8,9 @@
 - check favicon ico error FF
 - add typewriter jquery?
 - rewrite typewriter to vue
+- build page for: 
+  - http://poc.nirusu.me/utrecht ? (POC proof of concept under web dev)
+  - http://poc.nirusu.me/utrecht/blend_v004.html
 - **pagination styles**
 - **prev next nav on blog article?**
 - nav
