@@ -34,7 +34,8 @@
     // },
     data() {
       return {
-        theme: localStorage.getItem("theme")
+        // theme: localStorage.getItem("theme")
+        theme: ''
       };
     },
     methods: {
@@ -42,12 +43,22 @@
         if (this.theme == "dark") {
           this.theme = "light";
           document.body.setAttribute("data-theme", "light");
-          localStorage.setItem("theme", "light");
+          //localStorage.setItem("theme", "light");
         } else {
           this.theme = "dark";
           document.body.setAttribute("data-theme", "dark");
-          localStorage.setItem("theme", "dark");
+          //localStorage.setItem("theme", "dark");
         }
+      }
+    },
+    mounted() {
+      if (localStorage.theme) {
+        this.theme = localStorage.theme;
+      }
+    },
+    watch: {
+      theme(newTheme) {
+        localStorage.theme = newTheme;
       }
     }
   };
