@@ -209,8 +209,9 @@ nav.nav {
 }
 
 .nh-logo {
+  flex: 1 1 auto;
   text-decoration: none;
-  max-width: 320px;
+  max-width: 160px;
   color: var(--var-text-color);
 }
 
