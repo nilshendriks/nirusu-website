@@ -1,13 +1,13 @@
 ---
-id: 2
 title: 'Mac OS X default font-smoothing'
 date: 2008-04-11
+updated: 2013-07-25
 summary: 'about light text on dark backgrounds'
 ---
 
-## Update 25 July 2013
-
+<section class="nh-intro" markdown="1">
 So. It is more than 5 years after I wrote about this and we're still here having the same issue. Worse, there's a lot of misconception about this. There are plenty of blogs out there saying it is a browser issue and some even say it's a webfonts issue.
+</section>
 
 Most of the times the solution they provide is to add a rule to your CSS:
 

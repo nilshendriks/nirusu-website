@@ -1,4 +1,5 @@
 ---
+id: 1
 title: 'Proof of concept: app interface'
 date: 2018-07-07
 categories: web-development, poc, side-project

@@ -2,7 +2,12 @@
   <Layout>
     <h1>Hello, I’m Nils</h1>
     <!-- typewriter -->
-    <type-writer :type-speed="200" :num-of-spans="4" />
+    <type-writer
+      :type-speed="100"
+    >I create stuff. 👨🏻‍💻
+Mostly with 1's and 0's. 🤓
+All your digital needs served
+from the ❤️ of Amsterdam</type-writer>
   </Layout>
 </template>
 

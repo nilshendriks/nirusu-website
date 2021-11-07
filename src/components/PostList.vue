@@ -3,7 +3,7 @@
     <article class="post" v-for="post in posts" :key="post.node.id">
       <h2>{{post.node.title}}</h2>
       <p v-if="post.node.summary">{{post.node.summary}}</p>
-      <p v-else>{{post.node.excerpt}}</p>
+      <!-- <p v-else>{{post.node.excerpt}}</p> -->
       <p>Published on {{post.node.date}}</p>
       <g-link class="post__link" :to="post.node.path">Read article</g-link>
     </article>

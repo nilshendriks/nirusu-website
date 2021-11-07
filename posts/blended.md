@@ -1,5 +1,4 @@
 ---
-id: 60
 title: 'Proof of concept: blending revisited'
 summary: Proof of concept trying to recreate Edenspiekermann’s Utrecht City Theatre logo's blending effects.
 date: 2018-07-25

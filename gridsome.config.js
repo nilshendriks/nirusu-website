@@ -11,26 +11,17 @@ module.exports = {
   pathPrefix: '/nirusu-website',
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: '@gridsome/vue-remark',
       options: {
-        typeName: 'BlogPost',
-        path: './blog/**/*.md',
-        remark: {
-          // remark options
-        }
-      },
-    },
-  ],
-  templates: {
-    BlogPost: '/blog/:title',
-  },
-  transformers: {
-    remark: {
-      plugins: [
-        '@gridsome/remark-prismjs'
-      ]
+        typeName: 'Post', // Required
+        baseDir: './posts', // Where .md files are located
+        route: '/post/:title',
+        //pathPrefix: '/blog', // Add route prefix. Optional
+        template: './src/templates/Post.vue', // Optional
+        plugins: ["@gridsome/remark-prismjs"]
+      }
     }
-  },
+  ],
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')
     svgRule.uses.clear()

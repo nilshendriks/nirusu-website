@@ -1,21 +1,21 @@
 <template>
   <Layout>
     <h1>Blog</h1>
-    <BlogPostList :posts="$page.posts.edges"/>
+    <PostList :posts="$page.posts.edges"/>
     <Pager :range=0 ariaFirstLabel="to first page" ariaLastLabel="to last page" linkClass="pager__item" :info="$page.posts.pageInfo"/>
   </Layout>
 </template>
 
 <script>
-import BlogPostList from '~/components/BlogPostList.vue';
+import PostList from '~/components/PostList.vue';
 import { Pager } from 'gridsome'
 
 export default {
   metaInfo: {
-    title: 'Blog'
+    title: 'Posts'
   },
   components: {
-    BlogPostList,
+    PostList,
     Pager
   }
 }
@@ -23,7 +23,7 @@ export default {
 
 <page-query>
 query ($page: Int) {
-  posts: allBlogPost(perPage: 8, page: $page) @paginate {
+  posts: allPost(perPage: 8, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage
@@ -34,8 +34,8 @@ query ($page: Int) {
         title
         summary
         date(format: "MMMM D, YYYY")
+        updated(format: "MMMM D, YYYY")
         path
-        excerpt(length: 100)
       }
     }
   }

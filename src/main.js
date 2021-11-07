@@ -3,16 +3,22 @@
 // import 'prismjs/themes/prism.css'
 import '~/assets/words-blend.css'
 import 'prismjs/themes/prism-okaidia.css'
+import '~/assets/styles.css'
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient }) {
+  // Add attributes to HTML tag
+  head.htmlAttrs = {
+    'data-theme': 'theme-gs'
+  }
+
   head.link.push({
     rel: 'preconnect',
     href: 'https://fonts.googleapis.com'
   })
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;400&family=Open+Sans:wght@300;400;700&display=swap'
+    href: 'https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap'
   })
   // // Add an external JavaScript before the closing </body> tag
   // head.script.push({

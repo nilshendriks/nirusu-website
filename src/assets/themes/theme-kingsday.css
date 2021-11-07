@@ -1,0 +1,7 @@
+[data-theme='theme-kingsday'] {
+  --var-global-body-font-family: 'Jost', sans-serif;
+  --var-global-body-font-weight: 300;
+  --var-global-heading-font-family: var(--var-global-body-font-family);
+  --var-global-heading-font-weight: 500;
+  --var-global-body-background-color: #ff7900;
+}
