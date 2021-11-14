@@ -164,9 +164,11 @@
             // }
             //return target.classList.remove("active");
           }
+          if (isIntersecting) {
           //target.classList.remove("in-active");
-          target.classList.add("active");
+            target.classList.add("active");
           //target.classList.add("have-intersected-and-animated");
+          }
         });
       };
 
