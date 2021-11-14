@@ -8,7 +8,7 @@ module.exports = {
   siteName: 'nirusu media',
   siteDescription: 'media',
   siteUrl: 'https://nilshendriks.github.io',
-  // pathPrefix: '/nirusu-website',
+  pathPrefix: '/nirusu-website',
   plugins: [
     {
       use: '@gridsome/vue-remark',
