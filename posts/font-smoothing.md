@@ -2,6 +2,7 @@
 title: 'Mac OS X default font-smoothing'
 date: 2008-04-11
 updated: 2013-07-25
+categories: [web-development]
 summary: 'about light text on dark backgrounds'
 ---
 

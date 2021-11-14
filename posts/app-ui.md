@@ -2,7 +2,7 @@
 id: 1
 title: 'Proof of concept: app interface'
 date: 2018-07-07
-categories: web-development, poc, side-project
+categories: [poc, web-development, side-project]
 summary: CSS Grid & CSS Flex-box App-like Interface
 seal: false
 ---

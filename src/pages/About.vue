@@ -151,10 +151,34 @@
 <script>
   export default {
     metaInfo: {
-      title: 'About me',
-      script: [
-        { src: '../nh-skills.js', body: true }
-      ]
+      title: 'About me'
+    },
+    mounted() {
+      console.log('hey, im mounted');
+      const callback = (entries) => {
+        entries.forEach(({ target, isIntersecting }) => {
+          //console.log(target);
+          if (!isIntersecting) {
+            // if (target.classList.contains("have-intersected-and-animated")) {
+            //   target.classList.add("in-active");
+            // }
+            //return target.classList.remove("active");
+          }
+          //target.classList.remove("in-active");
+          target.classList.add("active");
+          //target.classList.add("have-intersected-and-animated");
+        });
+      };
+
+      const observer = new IntersectionObserver(callback, {
+        root: document.querySelector("nh-section"),
+        threshold: 1.0
+      });
+
+      document
+        .querySelectorAll(".nh-section--skills")
+        .forEach((el) => observer.observe(el));
+
     }
   }
 </script>
@@ -198,6 +222,7 @@
    height: 18px;
    background: #63da38;
    font-size: 0;
+   /* transition: width 1s ease-in; */
 }
  @keyframes skillprogressHTML {
    from {
@@ -207,6 +232,16 @@
      width: var(--skillamountHTML);
   }
 }
+
+@keyframes skillprogressHTMLreverse {
+   from {
+     width: var(--skillamountHTML);
+  }
+   to {
+     width: 0%;
+  }
+}
+
  @keyframes skillprogressCSS {
    from {
      width: 0%;
@@ -250,10 +285,19 @@
  [data-skill="html"] .mdl-label {
    /* background-image: url("~/assets/images/file_type_html.svg"); */
 }
+
  .active [data-skill="html"] .mdl-innerbar {
    background: #e64e17;
+   /* animation: skillprogressHTML var(--speed) ease-in-out 0s 1 forwards; */
    animation: skillprogressHTML var(--speed) ease-in-out 0s 1 forwards;
 }
+
+/* .in-active.have-intersected-and-animated [data-skill="html"] .mdl-innerbar {
+  background: #e64e17;
+  animation: skillprogressHTMLreverse var(--speed) ease-in-out 0s 1 forwards;
+} */
+
+
  [data-skill="css"] .mdl-label {
    /* background-image: url("../images/file_type_css.svg"); */
 }

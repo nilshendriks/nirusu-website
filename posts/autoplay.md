@@ -1,6 +1,7 @@
 ---
 title: 'HTML5 Audio autoplay'
 date: 2011-05-26
+categories: [web-development]
 summary: 'about HTML5 audio and video autoplay'
 ---
 

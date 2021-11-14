@@ -20,9 +20,9 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap'
   })
-  // // Add an external JavaScript before the closing </body> tag
+  // Add an external JavaScript before the closing </body> tag
   // head.script.push({
-  //   src: './nh-typewriter-min.js',
+  //   src: '../nh-skills2.js',
   //   body: true
   // })
   // Set default layout as a global component

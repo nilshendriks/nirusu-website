@@ -55,15 +55,20 @@ export default {
     background-color: hsl(196.3, 100%, 46.9%);
     box-decoration-break: clone;
     padding: 4px 8px;
-    line-height: 1.8;
+    line-height: 2.1;
   }
-  [data-theme='theme-gs'] .typewriter p {
+  /* [data-theme='theme-gs'] .typewriter p {
     font-size: 2rem;
     line-height: 2;
-  }
+  } */
 
   .typewriter.--breaking p {
     white-space: pre;
   }
+  @media only screen and (min-width: 768px) {
+    .typewriter p {
+      font-size: 2rem;
+      line-height: 2;
+    }
+  }
 </style>
-

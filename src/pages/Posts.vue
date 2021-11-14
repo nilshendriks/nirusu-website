@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1>Blog</h1>
+    <h1>Posts</h1>
     <PostList :posts="$page.posts.edges"/>
     <Pager :range=0 ariaFirstLabel="to first page" ariaLastLabel="to last page" linkClass="pager__item" :info="$page.posts.pageInfo"/>
   </Layout>
@@ -35,6 +35,7 @@ query ($page: Int) {
         summary
         date(format: "MMMM D, YYYY")
         updated(format: "MMMM D, YYYY")
+        categories
         path
       }
     }

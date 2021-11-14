@@ -1,7 +1,7 @@
 ---
 title: 'Vue TypeWriter component'
 date: 2021-11-04
-categories: web-development, poc, side-project
+categories: [poc, web-development, vue, side-project]
 summary: a Vue component with typewriter effect
 seal: true
 slug: typewriter

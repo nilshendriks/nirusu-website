@@ -9,6 +9,7 @@
   --var-global-color-white: #fff;
   --var-global-color-black: #000;
   --var-global-color-highlight: hsl(194.4, 100%, 21.2%);
+  --var-global-color-poc: #00cc88;
 
   --var-global-body-font-family: 'helvetica', sans-serif;
   --var-global-body-font-weight: 400;
@@ -108,22 +109,23 @@ html {
   background-color: var(--var-global-body-background-color);
   color: var(--var-global-body-text-color);
   font-family: var(--var-global-body-font-family, serif);
-  /* font-size: calc(var(--var-font-size-normal, 16) / var(--var-font-size-normal, 16) * 1rem); */
-  /* font-size: 100%; */
   font-size: calc(var(--var-font-size-medium) / 16 * 1rem);
   font-weight: var(--var-global-body-font-weight);
   line-height: 1.75;
-  /* 28px */
   letter-spacing: var(--var-global-body-letter-spacing, normal);
   height: 100%;
   font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
 }
 
+@media only screen and (min-width: 768px) {
+ html {
+   font-size: calc(var(--var-font-size-large) / 16 * 1rem);
+ } 
+}
+
 body {
   background-color: var(--var-global-body-background-color);
-  color: var(--var-global-body-text-color);
-  /* font-size: 1rem; */
-  /* font-size: calc(var(--var-font-size-medium) / 16 * 1rem); */
+  color: var(--var-global-body-text-color);  
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -151,29 +153,53 @@ h6 {
 }
 
 h1 {
-  /* font-size: 4rem; */
-  font-size: calc(var(--var-font-size-xxxxlarge, 68) / var(--var-font-size-normal, 16) * 1rem);
-  /* line-height: 1.25; */
+  font-size: calc(var(--var-font-size-xxlarge, 36) / var(--var-font-size-normal, 16) * 1rem);
 }
 
 h2 {
-  font-size: calc(var(--var-font-size-xxxlarge, 50) / var(--var-font-size-normal, 16) * 1rem);
-}
-
-h3 {
-  font-size: calc(var(--var-font-size-xxlarge, 38) / var(--var-font-size-normal, 16) * 1rem);
-}
-
-h4 {
   font-size: calc(var(--var-font-size-xlarge, 28) / var(--var-font-size-normal, 16) * 1rem);
 }
 
+h3 {
+  font-size: calc(var(--var-font-size-large, 24) / var(--var-font-size-normal, 16) * 1rem);
+}
+
+h4 {
+  font-size: calc(var(--var-font-size-medium, 20) / var(--var-font-size-normal, 16) * 1rem);
+}
+
 h5 {
-  font-size: calc(var(--var-font-size-large, 22) / var(--var-font-size-normal, 16) * 1rem);
+  font-size: calc(var(--var-font-size-medium, 18) / var(--var-font-size-normal, 16) * 1rem);
 }
 
 h6 {
   font-size: calc(var(--var-font-size-normal, 16) / var(--var-font-size-normal, 16) * 1rem);
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: calc(var(--var-font-size-xxxxlarge, 68) / var(--var-font-size-normal, 16) * 1rem);
+  }  
+  
+  h2 {
+    font-size: calc(var(--var-font-size-xxxlarge, 50) / var(--var-font-size-normal, 16) * 1rem);
+  }
+  
+  h3 {
+    font-size: calc(var(--var-font-size-xxlarge, 38) / var(--var-font-size-normal, 16) * 1rem);
+  }
+  
+  h4 {
+    font-size: calc(var(--var-font-size-xlarge, 28) / var(--var-font-size-normal, 16) * 1rem);
+  }
+  
+  h5 {
+    font-size: calc(var(--var-font-size-large, 22) / var(--var-font-size-normal, 16) * 1rem);
+  }
+  
+  h6 {
+    font-size: calc(var(--var-font-size-normal, 16) / var(--var-font-size-normal, 16) * 1rem);
+  }
 }
 
 blockquote p {
@@ -221,7 +247,7 @@ dl+dl {
 p,
 ul,
 ol {
-  max-width: 28em;
+  /* max-width: 28em; */
 }
 
 /* code */
