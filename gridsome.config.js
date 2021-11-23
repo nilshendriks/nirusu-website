@@ -18,7 +18,14 @@ module.exports = {
         route: '/post/:title',
         //pathPrefix: '/blog', // Add route prefix. Optional
         template: './src/templates/Post.vue', // Optional
-        plugins: ["@gridsome/remark-prismjs"]
+        plugins: ["@gridsome/remark-prismjs"],
+        remark: {
+          plugins: [
+            [ '@noxify/gridsome-plugin-remark-embed', {
+                'enabledProviders' : ['Youtube', 'Twitter', 'Gist'],
+            }]
+          ]
+        }
       }
     }
   ],

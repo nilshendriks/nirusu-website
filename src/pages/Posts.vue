@@ -36,6 +36,7 @@ query ($page: Int) {
         date(format: "MMMM D, YYYY")
         updated(format: "MMMM D, YYYY")
         categories
+        cover
         path
       }
     }

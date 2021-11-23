@@ -36,7 +36,7 @@ article > header {
 }
 
 .nh-post h1 {
-  max-width: 640px;
+  /* max-width: 640px; */
   margin: 0 auto;
 }
 

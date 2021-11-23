@@ -2,6 +2,9 @@
   <div class="post-list">
     <article class="post" :class="'--cat-'+post.node.categories[0]" v-for="post in posts" :key="post.node.id">
       <g-link class="post__link" :to="post.node.path">
+        <p>{{ post.node.cover }}</p>
+        <img :src="post.node.cover" alt="cover">
+        <!-- <img :src="`~/..${post.node.cover}`" alt="cover"> -->
       <h2 class="post__title">{{post.node.title}}</h2>
       <p class="post__category" v-if="post.node.categories">{{post.node.categories[0]}}</p>
       <p class="post__date">Published on {{post.node.date}}</p>
@@ -21,10 +24,20 @@ export default {
 
 <style>
 .post-list {
-  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .post-list {
+    grid-template-columns: repeat(2, 1fr );
+  }
+}
+
+
 .post {
+  margin: 0;
   padding: 2rem 1rem;
   /* border: 1px solid black; */
   border-radius: 16px;
