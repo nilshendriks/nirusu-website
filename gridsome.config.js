@@ -7,8 +7,8 @@
 module.exports = {
   siteName: 'nirusu media',
   siteDescription: 'media',
-  siteUrl: 'https://nilshendriks.github.io',
-  pathPrefix: '/nirusu-website',
+  siteUrl: 'https://nirusu-me.onrender.com',
+  pathPrefix: '/dist',
   plugins: [
     {
       use: '@gridsome/vue-remark',
