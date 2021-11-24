@@ -10,6 +10,7 @@
   --var-global-color-black: #000;
   --var-global-color-highlight: hsl(194.4, 100%, 21.2%);
   --var-global-color-poc: #00cc88;
+  --var-global-color-webdev: #ffbb00;
 
   --var-global-body-font-family: 'helvetica', sans-serif;
   --var-global-body-font-weight: 400;
@@ -39,7 +40,7 @@
   /* 16px/1rem */
   --var-font-size-small: 12;
   /* 0.75rem/12.00px */
-  
+
   /* typography */
     /* blockquote */
     --var-global-blockquote-font-family: var(--var-global-heading-font-family, serif);
@@ -53,7 +54,7 @@
   --var-global-body-font-weight: 300;
   --var-global-heading-font-family: var(--var-global-body-font-family);
   --var-global-heading-font-weight: 500;
-  
+
   --var-global-blockquote-display: inline;
   --var-global-blockquote-font-style: normal;
   --var-global-blockquote-font-weight: 500;
@@ -120,12 +121,12 @@ html {
 @media only screen and (min-width: 768px) {
  html {
    font-size: calc(var(--var-font-size-large) / 16 * 1rem);
- } 
+ }
 }
 
 body {
   background-color: var(--var-global-body-background-color);
-  color: var(--var-global-body-text-color);  
+  color: var(--var-global-body-text-color);
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -179,24 +180,24 @@ h6 {
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: calc(var(--var-font-size-xxxxlarge, 68) / var(--var-font-size-normal, 16) * 1rem);
-  }  
-  
+  }
+
   h2 {
     font-size: calc(var(--var-font-size-xxxlarge, 50) / var(--var-font-size-normal, 16) * 1rem);
   }
-  
+
   h3 {
     font-size: calc(var(--var-font-size-xxlarge, 38) / var(--var-font-size-normal, 16) * 1rem);
   }
-  
+
   h4 {
     font-size: calc(var(--var-font-size-xlarge, 28) / var(--var-font-size-normal, 16) * 1rem);
   }
-  
+
   h5 {
     font-size: calc(var(--var-font-size-large, 22) / var(--var-font-size-normal, 16) * 1rem);
   }
-  
+
   h6 {
     font-size: calc(var(--var-font-size-normal, 16) / var(--var-font-size-normal, 16) * 1rem);
   }
@@ -315,7 +316,7 @@ nav.nav {
 
 footer[role="contentinfo"] {
  display: flex;
- gap: 1rem; 
+ gap: 1rem;
 }
 
 footer[role="contentinfo"] * {

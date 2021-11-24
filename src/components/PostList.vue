@@ -68,6 +68,11 @@ export default {
   color: #fff;
 }
 
+.post.--cat-web-development {
+    background-color: var(--var-global-color-webdev, yellow);
+    color: #000;
+  }
+
 .post__date {
   text-align: center;
   font-size: smaller;
