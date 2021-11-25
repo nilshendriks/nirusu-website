@@ -7,10 +7,11 @@
       </figure>
       <div class="content">
         <p>Hi, I’m Nils Hendriks, a.k.a. nirusu. I’ve been working in web development since 1995. In 2007, I moved to Singapore and in 2011 to Tokyo, where I worked as a freelance <em>Front End Web Developer.</em></p>
-        <p>Now, back in Amsterdam, The Netherlands I'm running my own studio, called <em>nirusu</em> and offering a variety of services like web development, design, photography and 3D visualisation.</p>
-        <p>As a side project I started <a href="http://adifferentindex.com"><em>A Different Index</em></a> as a personal visual archive of everything I find interesting. Most likely it has something to do with design (in its broadest sense).</p>
-        <p>My personal photo portfolio can be <a href="http://nilshendriks.com">found here</a></p>
-        <p>Follow me on <a href="https://instagram.com/nirususan">Instagram</a> or check out my <a href="https://www.linkedin.com/in/nilshendriks/">LinkedIn profile</a>.</p>
+        <p>Photography has been my number one passion for as long as I can remember. And remembering brings back the smell of chemicals developing film at the attic. Now digital, I focus on photographing people. On the streets of wherever and in a pop-up studio.</p>
+        <!-- <p>Now, back in Amsterdam, The Netherlands I'm running my own studio, called <em>nirusu</em> and offering a variety of services like web development, design, photography and 3D visualisation.</p> -->
+        <!-- <p>As a side project I started <a href="http://adifferentindex.com"><em>A Different Index</em></a> as a personal visual archive of everything I find interesting. Most likely it has something to do with design (in its broadest sense).</p> -->
+        <!-- <p>My personal photo portfolio can be <a href="http://nilshendriks.com">found here</a></p> -->
+        <p>Follow me on <a href="https://instagram.com/nirususan">Instagram</a> <!-- or check out my <a href="https://www.linkedin.com/in/nilshendriks/">LinkedIn profile</a>.--></p>
       </div>
     </div>
     <section
