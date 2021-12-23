@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: dist/about/index.html
-  label: About
-  match: "**/*"
 - type: directory
   path: posts
   label: Posts
