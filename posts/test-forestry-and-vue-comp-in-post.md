@@ -8,14 +8,12 @@ seal: false
 slug: test
 
 ---
-I rewrote the jquery script for the typewriter effect featured on the previous homepage as a Vue component.
+This post was added by forestry CMS.
+
+Adding a Vue component in markdown works.
 
 import TypeWriter from '\~/components/TypeWriter.vue'
 
-Here's the component being used: 
+Here's the component being used:
 
-<type-writer :type-speed="150">
- I create stuff. 👨 💻 
- Mostly with 1's and 0's. 🤓 
- All your digital needs served from the ❤️ of Amsterdam
-</type-writer>
+<type-writer :type-speed="150">I create stuff. 👨 💻 Mostly with 1's and 0's. 🤓 All your digital needs served from the ❤️ of Amsterdam </type-writer>
