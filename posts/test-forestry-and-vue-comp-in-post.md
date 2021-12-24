@@ -1,6 +1,6 @@
 ---
 title: test forestry and vue comp in post
-date: 2021-12-23T23:00:00Z
+date: 2021-12-24T11:00:00Z
 categories:
 - test
 summary: testing content adding via forestry
